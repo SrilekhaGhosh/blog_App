@@ -59,7 +59,7 @@ export default function PostForm({post}){
 
     React.useEffect(() => {
         watch((value, {name}) => {
-            if (name === "title") {
+            if (name === "npm run devtitle") {
                 setValue("slug", slugTransform(value.title), {shouldValidate: true})
             }
         }) 
